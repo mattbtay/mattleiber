@@ -41,6 +41,13 @@
         on Reddit, Alex and PJ, for making such a great show, and of course Matt
         Lieber.
       </p>
+      <a
+        style="width:100px; height:auto"
+        class="d-block mx-auto"
+        href="https://gimletmedia.com/shows/reply-all"
+        target="_blank"
+        ><img width="100" src="@/assets/replyall.jpg" alt="replyall logo"
+      /></a>
     </div>
   </div>
 </template>
