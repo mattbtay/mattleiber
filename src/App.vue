@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <p class="text-white text-center font-weight-light">{{ text.column_2 }}</p>
-    <p class="pb-3 text-white text-center font-italic font-weight-lighter">
+    <h1 class="pb-2 px-4 text-white text-center font-weight-light">
+      {{ text.column_2 }}
+    </h1>
+    <p class="pb-4 mb-4 text-white text-center font-italic font-weight-lighter">
       episode {{ text.column_1 }}
     </p>
-    <div class="pt-3">
+    <div class="pt-4 mt-4">
       <p class="text-center font-weight-lighter text-white">
         with
         <svg

@@ -7,7 +7,10 @@ Vue.use(VueRouter)
 const routes = [{
   path: '/',
   name: 'What is Matt Lieber',
-  component: Home
+  component: Home,
+  meta: {
+    title: 'What is Matt Lieber?',
+  }
 }, ]
 
 const router = new VueRouter({
