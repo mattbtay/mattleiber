@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h1 class="pb-2 px-4 text-white text-center font-weight-light">
+    <h1
+      class="text-capitalize pb-2 px-4 text-white text-center font-weight-light"
+    >
       {{ text.column_2 }}
     </h1>
     <p class="pb-4 mb-4 text-white text-center font-italic font-weight-lighter">
