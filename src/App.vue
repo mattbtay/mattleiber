@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p></p>
+    <p class="text-white font-weight-light">{{ text.column_2 }}</p>
+    <p class="text-white text-center font-italic font-weight-lighter">
+      episode {{ text.column_1 }}
+    </p>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  data() {
+    return {
+      text: "",
+    };
+  },
+  mounted() {
+    const sheetData = fetch("https://sheetlabs.com/MBT/mattlieberis")
+      .then((response) => response.json())
+      .then((data) => {
+        var rand = Math.floor(Math.random() * Math.floor(data.length));
+        return (this.text = data[rand]);
+      });
+    sheetData;
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("/node_modules/bootstrap/dist/css/bootstrap.css");
+body {
+  background: #d32361;
 }
 </style>
